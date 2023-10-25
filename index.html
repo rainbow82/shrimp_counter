@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shrimp Counter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class='header'>
+    <h1>Shrimp Counter</h1>
+    <h4>Keep track of how many shrimp you've eaten at "All You Can Eat Shrimp"</h4>
+  </header>
+  <div class="container">
+    <p>Enter in the different flavors of shrimp you (or your loved one) will be eating. With each shrimp eaten, click the button under that flavor to update the count.</p>
+    <label for="flavor_one">Enter Flavor:</label><br>
+    <input type="text" id="flavor_one" name="flavor_one"
+      placeholder="flavor name" class="margin-bottom-15"
+    ><br>
+
+    <label for="flavor_two" class="margin-top-15">Enter Flavor:</label><br>
+    <input type="text" id="flavor_two" name="flavor_two"
+      placeholder="flavor name" class="margin-bottom-15"
+    ><br>
+
+    <label for="flavor_three" class="margin-top-15">Enter Flavor:</label><br>
+    <input type="text" id="flavor_three" name="flavor_three"
+      placeholder="flavor name"
+    ><br>
+
+    <div class="totals-container margin-top-15">
+      <div>
+        <p class="margin-top-15">Flavor One:<span id="first_flavor" class="margin-left-5">flavor</span></p>
+        <p>total: <span id="first_flavor_count">0</span></p>
+        <button id="flavor_one_counter">+</button><br>
+        <button id='flavor_one_counter_reset' class="margin-top-15">Reset</button>
+      </div>
+      <div>
+        <p>Flavor Two:<span id="second_flavor" class="margin-left-5">flavor</span></p>
+        <p>total: <span id="second_flavor_count">0</span></p>
+        <button id="flavor_two_counter">+</button><br>
+        <button id='flavor_two_counter_reset' class="margin-top-15">Reset</button>
+      </div>
+      <div>
+        <p>Flavor Three:<span id="third_flavor" class="margin-left-5">flavor</span></p>
+        <p>total: <span id="third_flavor_count">0</span></p>
+        <button id="flavor_three_counter">+</button><br>
+        <button id='flavor_three_counter_reset' class="margin-top-15">Reset</button>
+      </div>
+    </div>
+    <div class="margin-top-150">
+      <button id='clear_button'>Clear Everything</button>
+    </div>
+  </div>
+
+
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
